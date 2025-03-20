@@ -64,7 +64,7 @@ def doar():
         conn.execute(
             """
                 INSERT INTO LIVROS (titulo, categoria, autor, imagem_url)
-                VALUES ("{titulo}", "{categoria}", "{autor}", "{imagem_url}")
+                VALUES (?, ?, ?, ?)
             """,
             (titulo, categoria, autor, imagem_url)
         )
