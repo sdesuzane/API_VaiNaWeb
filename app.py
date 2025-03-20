@@ -14,7 +14,7 @@ def exibir_mensagem():
 
 # Criamos outra rota para o endpoint "/femandaopix"
 # Quando acessarmos http://127.0.0.1:5000/femandaopix, a função será chamada automaticamente
-@app.route("/femandaopix")
+@app.route("/")
 def manda_o_pix():
     # Retorna um texto formatado em HTML que será exibido no navegador
     return "<h2>SE TEM DOR DE CUTUVELO, TÁ DEVENDO</h2>"
@@ -61,13 +61,10 @@ def doar():
 
     with sqlite3.connect("database.db") as conn:
 
-        conn.execute(
-            """
+        conn.execute(f"""
                 INSERT INTO LIVROS (titulo, categoria, autor, imagem_url)
-                VALUES (?, ?, ?, ?)
-            """,
-            (titulo, categoria, autor, imagem_url)
-        )
+                VALUES ("{titulo}", "{categoria}", "{autor}", "{imagem_url}")
+            """)
 
     conn.commit() # Salva as alterações no banco de dados
 
