@@ -31,7 +31,6 @@ init_db()
 @app.route("/doar", methods=["POST"])
 def doar():
     dados = request.get_json()
-    print(f"Aqui estão os dados: {dados}")
 
     titulo = dados.get("titulo")
     categoria = dados.get("categoria")
