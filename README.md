@@ -1,6 +1,6 @@
 # API de Doação de Livros
 
-Essa é uma API simples feita com Flask e SQLite3 para fins de estudo da escola Vai Na Web, ela permite cadastrar e listar doados.
+Essa é uma API simples feita com Flask e SQLite3 para fins de estudo da escola Vai Na Web, ela permite cadastrar e listar livros doados.
 
 ## Como rodar o projeto
 
