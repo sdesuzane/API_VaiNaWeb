@@ -83,4 +83,4 @@ Retorna todos os livros cadastrados na API.
 
 ---
 
-Feito por Maria Suzane
+Desenvolvido por **Suzane**
