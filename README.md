@@ -54,7 +54,7 @@ Endpoint para cadastrar um novo livro
 
 ### GET /livros
 
-Retorna todos os livros cadastrados em nossa API.
+Retorna todos os livros cadastrados na API.
 
 **Resposta (200)**:
 ```json
